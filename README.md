@@ -1,6 +1,6 @@
 **Créer un tar en excluant un repertoire**
 ```
-tar --exclude='./cache' -zcvf /var/www/vhosts/ht26.com/backup.tgz .
+tar --exclude='./cache' -zcvf /var/www/vhosts/xxxxxxxxxx/backup.tgz .
 ```
 
 **Rechercher une chaîne de caractères dans les fichiers**
@@ -16,14 +16,14 @@ mysql -u user -p databasename < backup.sql (import)
 
 **Trouver et déplacer les fichiers créés depuis plus de 100 jours dans un répertoire donné**
 ```
-find /home/fromagescom/fedex_pdf/ -maxdepth 1 -mtime +100 -type f -exec ls -l {} \;
-find /home/fromagescom/fedex_pdf/ -maxdepth 1 -mtime +100 -type f -exec mv "{}" /home/fromagescom/fedex_pdf_archive/ \;
+find /home/directory/ -maxdepth 1 -mtime +100 -type f -exec ls -l {} \;
+find /home/directory/ -maxdepth 1 -mtime +100 -type f -exec mv "{}" /home/directory/archive/ \;
 ```
 
 **Rsync (copie d'un serveur à l'autre)**
 ```
-rsync -ave ssh isfbrandxe@ftp.cluster023.hosting.ovh.net:/homez.92/isfbrandxe/www /home/isfbrandsf/www
-rsync -avzq root@81.250.197.5:/home/fromagescom/fedex_pdf/* /home/fromagesco/www/media/uploads/fda_pnsi/ >/dev/null 2>&1
+rsync -ave ssh login@ftp.cluster023.hosting.ovh.net:/oldir/www /newdir/www
+rsync -avzq root@0.0.0.0:/home/directory/* /home/directory/www/ >/dev/null 2>&1
 ```
 
 **Commandes Symfo**
